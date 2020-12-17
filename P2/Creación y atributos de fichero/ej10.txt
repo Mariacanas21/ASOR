@@ -1,0 +1,14 @@
+
+¿Qué sucede cuando se borra uno de los enlaces rígidos?
+	Se decrementa en uno el número de enlaces del nodo del fichero 
+		del que se ha echo el enlace simbólico (Ya que tienen el mismo i-nodo)
+¿Qué sucede si se borra uno de los enlaces simbólicos?
+	Al realizar el enlace simbólico se crea un fichero con otro i-nodo
+		que será una especie de acceso directo al fichero original, pudiendose
+		borrar y crear las veces que se quiera y no afectaría al original, ya que tendrían
+		números de i-nodos diferentes
+¿Y si se borra el fichero original?
+	En el caso del enlace rígido pasaría lo mismo que en la primera pregunta, hasta que el número de enlaces sea 0,
+		cuando se alcanza ese valor, el i-nodo asignado quedaría sin usarse ya que no existiría ningún fichero
+	En el caso del enlace simbólico si se borrase el original que es el que contiene todos los datos, el enlace simbólico
+		se quedaría como un enlace corrupto esperando a que se volviera a crear el fichero original
