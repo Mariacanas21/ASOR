@@ -1,0 +1,6 @@
+
+Para duplicar los descriptores de fichero con fcntl(2) se pueden utilizar las siguientes opciones
+
+->F_DUPFD(int) : Buscará el descriptor de archivo que esté disponible y sea
+	menor o igual que el que se le está pasando
+->F_DUPFD_CLOEXEC(int): Este evitará que el programa realize la operación de F_SETFD fcntl()
