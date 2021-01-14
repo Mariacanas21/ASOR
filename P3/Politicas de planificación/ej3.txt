@@ -1,3 +1,0 @@
-
-Al ejecutar el programa del ej2 con la prioridad de 12, la prioridad en este caso del programa
-sería de 12, y además se heredarán los atributos de la planificación
